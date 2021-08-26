@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link,NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 
 class Mynavigation extends Component {
 
@@ -9,9 +9,9 @@ class Mynavigation extends Component {
             <div>
                 <ul>
                    
-                    <li><Link to="/page1">Page1</Link></li>
-                    <li><Link to="/page2">Page2</Link></li>
-                    <li><Link to="/page3">Page3</Link></li>
+                    <li><NavLink activeStyle={{ color:"green"}} to="/page1">Page1</NavLink></li>
+                    <li><NavLink activeStyle={{ color:"green"}} to="/page2">Page2</NavLink></li>
+                    <li><NavLink activeStyle={{ color:"green"}} to="/page3">Page3</NavLink></li>
                 </ul>
 
             </div>
