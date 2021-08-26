@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom/cjs/react-router-dom.min';
 import Page1 from './Page1';
 import Page2 from './Page2';
 import Page3 from './Page3';
+import Login from './Login';
 import Notfound from './Notfound';
 class Myroute extends Component {
 
@@ -13,6 +14,7 @@ class Myroute extends Component {
             <div>
                 <Switch>
                     <Route exact path="/page1" component={Page1} />
+                    <Route exact path="/login" component={Login} />
                     <Route exact path="/page2/:username" component={Page2} />
                     <Route exact path="/page3" component={Page3} />
                     <Route  component={Notfound} />
